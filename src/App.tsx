@@ -12,7 +12,7 @@ const App: Component = () => {
   return (
     <div class="flex min-h-screen bg-gray-900 text-white">
       {/* Sidebar starts */}
-      <aside class="md:block md:w-64 lg:w-80 space-y-6 py-7 px-2 bg-gray-800">
+      <aside class="md:block w-40 md:w-64 lg:w-80 space-y-6 py-7 px-2 bg-gray-800">
 
         <a href="#" class="text-3xl font-bold flex md:justify-center md:ml-0 justify-start ml-3 pb-4 border-b border-gray-700 ">
           Speakr
@@ -46,6 +46,7 @@ const App: Component = () => {
           <p class="ml-3 text-md">Speak It</p>
         </button>
 
+
         <div class="flex-it my-3 hover:cursor-pointer">
             <div class="flex-it items-center flex-row p-3 hover:bg-gray-600 hover:rounded-xl rounded-xl transition duration-200 cursor-pointer">
                 <div class="flex-it">
@@ -58,7 +59,7 @@ const App: Component = () => {
                 </div>
                 <div class="flex-it xl:flex flex-grow flex-row justify-between items-center">
                     <div class="flex-it mx-3 font-semibold text-md">cottam1999</div>
-                    <div class="flex-it">
+                    <div class="flex-it hidden md:block">
                         <FiMoreHorizontal size={18} />
                     </div>
                 </div>
@@ -161,7 +162,7 @@ const App: Component = () => {
       </div>
 
       {/* Right Sidebar */}
-      <aside class="hidden lg:block md:w-80 w-64 bg-gray-800 p-4">
+      <aside class="hidden lg:block md:w-1/5 w-64 bg-gray-800 p-4">
         <h2 class="text-xl font-bold pb-2 border-b border-gray-700">Trends</h2>
         <div class="mt-4">
           {/* Trend items */}

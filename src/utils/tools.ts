@@ -1,0 +1,1 @@
+export const randomize = () => Math.floor(Math.random() * 5000)

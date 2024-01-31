@@ -1,35 +1,36 @@
 import { For } from "solid-js";
+import { randomize } from "../../utils/tools";
 
 const trends = [
     {
         category: "Sports",
         content: "Local team secures a dramatic last-minute win in the national league!",
-        likeCount: 3200
+        likeCount: randomize()
     },
     {
         category: "Entertainment",
         content: "New action movie breaks box office records on opening weekend!",
-        likeCount: 5400
+        likeCount: randomize()
     },
     {
         category: "Technology",
         content: "Revolutionary new battery technology promises to double the life of smartphones!",
-        likeCount: 4600
+        likeCount: randomize()
     },
     {
         category: "Politics",
         content: "Major policy reform announced, aiming to reshape the public education system!",
-        likeCount: 3800
+        likeCount: randomize()
     },
     {
         category: "Lifestyle",
         content: "Celebrity chef reveals secret recipe for the perfect summer salad!",
-        likeCount: 2900
+        likeCount: randomize()
     },
     {
         category: "Science",
         content: "Breakthrough discovery in space exploration could change our understanding of the universe!",
-        likeCount: 5100
+        likeCount: randomize()
     }
 ];
 
@@ -37,9 +38,9 @@ const trends = [
 
 const TrendsSidebar = () => {
     return(
-        <aside class="hidden lg:block md:w-1/5 w-64 bg-gray-800 p-4">
+        <aside class="hidden lg:block md:w-1/5 w-64 bg-gray-800 p-4 pt-11">
             <div class="flex justify-center">
-                <h2 class="text-xl font-bold pb-2 border-b border-gray-700">Trends</h2>
+                <h2 class="text-3xl font-bold pb-2 border-b border-gray-700">Trends</h2>
             </div>
             <div class="mt-4">
             {/* Trend items */}

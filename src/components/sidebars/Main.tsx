@@ -3,7 +3,7 @@ import { AiOutlineUser } from 'solid-icons/ai'
 import { FiMoreHorizontal  } from 'solid-icons/fi'
 import { IoNotificationsOutline } from "solid-icons/io"
 import { BsStars } from 'solid-icons/bs'
-import { TbSpeakerphone } from 'solid-icons/tb'
+import { HiOutlineSparkles } from 'solid-icons/hi'
 import { SiSparkar } from 'solid-icons/si'
 
 const profileImg = "https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Wayfarers&hairColor=Blonde&facialHairType=MoustacheFancy&facialHairColor=Black&clotheType=BlazerSweater&eyeType=Squint&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Tanned"
@@ -38,7 +38,7 @@ const MainSidebar = () => {
                     <span class="ml-3 font-semibold text-md hidden xs:block">Notification</span>
                 </a>
                 <a href="#" class="flex items-center justify-center xs:justify-normal p-2 hover:bg-gray-700 rounded-xl">
-                    <BsStars size={18} />
+                    <HiOutlineSparkles size={18} />
                     <span class="ml-3 font-semibold text-md hidden xs:block">Discover</span>
                 </a>
             </nav>

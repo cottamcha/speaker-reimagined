@@ -15,10 +15,10 @@ const MainSidebar = () => {
             <SiSparkar class="block xs:hidden ml-3" size={25} />
             <div class='flex justify-center'>
                 <SiSparkar size={37} class=" pb-4 hidden xs:block mt-[8px] pl-4"/>
-                <a href="#" class="text-3xl font-bold hidden pb-4 xs:block">
+                <a href="#" class="text-3xl font-bold hidden xs:pb-4 xs:block">
                     peakr
                 </a>
-                <p class="text-xs mt-[17px]">reimagined</p>
+                <p class="text-xs text-[9px] mt-[17px] hidden xs:block pr-[14px] sm:pr-0">reimagined</p>
             </div>
 
             <nav>

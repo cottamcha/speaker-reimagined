@@ -4,6 +4,7 @@ import { FiMoreHorizontal  } from 'solid-icons/fi'
 import { IoNotificationsOutline } from "solid-icons/io"
 import { BsStars } from 'solid-icons/bs'
 import { TbSpeakerphone } from 'solid-icons/tb'
+import { SiSparkar } from 'solid-icons/si'
 
 const profileImg = "https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Wayfarers&hairColor=Blonde&facialHairType=MoustacheFancy&facialHairColor=Black&clotheType=BlazerSweater&eyeType=Squint&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Tanned"
 
@@ -11,10 +12,11 @@ const MainSidebar = () => {
 
     return(
         <aside class="md:block w-16 xs:w-[30vw] md:w-64 lg:w-80 space-y-6 py-5 px-2 bg-gray-800">
-            <TbSpeakerphone class="block xs:hidden ml-3" size={25} />
+            <SiSparkar class="block xs:hidden ml-3" size={25} />
             <div class='flex justify-center'>
-                <a href="#" class="text-3xl font-bold hidden pb-4 border-b border-gray-700 xs:block">
-                Speakr
+                <SiSparkar size={37} class=" pb-4 hidden xs:block mt-[8px] pl-4"/>
+                <a href="#" class="text-3xl font-bold hidden pb-4 xs:block">
+                    peakr
                 </a>
             </div>
 

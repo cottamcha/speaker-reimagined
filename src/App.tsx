@@ -5,20 +5,11 @@ import {  BsImages } from 'solid-icons/bs'
 import { profileImg } from "./utils/tools"
 
 import MainLayout from "./components/layouts/Main"
-import Post from "./components/posts/Post"
+import MainPost from "./components/posts/MainPost"
+
+import { Post } from "./types/post"
 
 
-type Post = {
-  id: string
-  content: string
-  user: {
-    userName: string
-    avatar: string
-  }
-  likesCount: number
-  commentCount: number
-  date: Date
-}
 
 const App: Component = () => {
   const [content, setContent] = createSignal("")
@@ -37,10 +28,10 @@ const App: Component = () => {
       date: new Date()
     }
 
-    setPosts([post, ...posts()])
+    if(!post.content) return
 
+    setPosts([post, ...posts()])
     setContent("")
-    console.log(JSON.stringify(posts()))
   }
 
   return (
@@ -94,8 +85,8 @@ const App: Component = () => {
               {/* MESSENGER END */}
             </div>
             <For each={posts()}>
-            {() =>
-              <Post />
+            {(post) =>
+              <MainPost post={post} />
             }        
             </For>
         </MainLayout>

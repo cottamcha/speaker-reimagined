@@ -2,9 +2,9 @@ import { BiRegularHomeAlt2, BiRegularMessageSquareAdd } from 'solid-icons/bi'
 import { AiOutlineUser } from 'solid-icons/ai'
 import { FiMoreHorizontal  } from 'solid-icons/fi'
 import { IoNotificationsOutline } from "solid-icons/io"
-import { BsStars } from 'solid-icons/bs'
 import { HiOutlineSparkles } from 'solid-icons/hi'
 import { SiSparkar } from 'solid-icons/si'
+import MainLayout from '../layouts/Main'
 
 const profileImg = "https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Wayfarers&hairColor=Blonde&facialHairType=MoustacheFancy&facialHairColor=Black&clotheType=BlazerSweater&eyeType=Squint&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Tanned"
 
@@ -18,6 +18,7 @@ const MainSidebar = () => {
                 <a href="#" class="text-3xl font-bold hidden pb-4 xs:block">
                     peakr
                 </a>
+                <p class="text-xs mt-[17px]">reimagined</p>
             </div>
 
             <nav>

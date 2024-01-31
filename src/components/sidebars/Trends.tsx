@@ -1,4 +1,5 @@
 import { For } from "solid-js";
+import { AiOutlineHeart  } from 'solid-icons/ai'
 import { randomize } from "../../utils/tools";
 
 const trends = [
@@ -46,14 +47,17 @@ const TrendsSidebar = () => {
             {/* Trend items */}
             <For each={trends}>
                 {(trend) =>
-                    <div class="flex flex-col bg-gray-800 hover:bg-gray-700 rounded-lg transition duration-300 ease-in-out cursor-pointer overflow-hidden mb-4">
-                    <div class="px-3 py-2">
-                        <h5 class="text-md font-bold text-white">{trend.category}</h5>
-                    </div>
-                    <div class="px-3 py-2">
-                        <p class="text-gray-300 text-sm mb-2">{trend.content}</p>
-                        <span class="text-gray-400 text-xs">{trend.likeCount.toLocaleString()} likes</span>
-                    </div>
+                    <div class="flex flex-col bg-gray-800 hover:bg-gray-700 rounded-lg transition duration-300 ease-in-out cursor-pointer overflow-hidden mb-4 p-2">
+                        <div class="px-3 py-2">
+                            <h5 class="text-lg font-bold text-white">{trend.category}</h5>
+                        </div>
+                        <div class="px-3 py-1 mb-1">
+                            <p class="text-gray-300 text-sm mb-2">{trend.content}</p>
+                            <div class="flex space-x-1 items-center hover:text-pink-400">
+                                <span class="text-gray-400 text-xs">{trend.likeCount.toLocaleString()}</span>
+                                <AiOutlineHeart size={13} />
+                            </div>
+                        </div>
                     </div>
                 }
             </For>
